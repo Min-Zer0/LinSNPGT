@@ -1,17 +1,19 @@
 # ___LinSNPGT: Genotyping of specified SNP sites on linux system___
 
-Installing
 
-LinSNPGT requires :
+### LinSNPGT requires :
+  - Python >= 3.7 
+  - bowtie2 
+  - samtools
+  - java8
 
-  Python >= 3.7 along with Python development headers and libraries
-
+### Installing
 Clone LinSNPGT
+···
 git clone git@github.com:JessieChen7/LinSNPGT.git --recursive
-
 cd LinSNPGT
 virtualenv -p python3 cactus_env
-
+···
 
 ## 💡 General Introduction
 We have developed a toolkit to call variant loci on the windows system, [**WinSNPGT**](https://github.com/JessieChen7/WinSNPGT), which is very friendly to those who have little experience in linux operation. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets. LinSNPGT is the Linux platform version of this toolkit. The installation and use of this toolkit is described below.
