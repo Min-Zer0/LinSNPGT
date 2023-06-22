@@ -5,7 +5,7 @@
   - Python >= 3.7 
   - bowtie2 
   - samtools
-  - [java8](https://download.oracle.com/otn/java/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jdk-8u202-linux-i586.tar.gz)
+  - [java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
 
 ### Installing
 ```
