@@ -1,7 +1,9 @@
 # ___LinSNPGT: Genotyping of specified SNP sites on linux system___
 
 Installing
+
 LinSNPGT requires :
+
   Python >= 3.7 along with Python development headers and libraries
 
 Clone LinSNPGT
