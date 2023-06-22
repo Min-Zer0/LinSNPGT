@@ -8,13 +8,9 @@
   - java8
 
 ### Installing
-Clone LinSNPGT
-
 ```
 git clone git@github.com:JessieChen7/LinSNPGT.git --recursive
-
 cd LinSNPGT
-
 virtualenv -p python3 cactus_env
 ```
 
