@@ -2,7 +2,7 @@
 
 
 ### LinSNPGT requires :
-  - Python >= 3.7 
+  - Python
   - bowtie2 
   - samtools
   - [java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
@@ -11,7 +11,8 @@
 ```
 git clone git@github.com:JessieChen7/LinSNPGT.git --recursive
 cd LinSNPGT
-virtualenv -p python3 cactus_env
+# install java8
+./Install.Java8.sh
 ```
 
 ## 💡 General Introduction
