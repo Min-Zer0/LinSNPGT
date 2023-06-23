@@ -27,10 +27,11 @@ The example-data files are not included in the release package, you can download
 The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset in the toolkit to complete the genotyping.
 ## 🌟 Installation
 ### LinSNPGT requires :
-  - Python
-  - bowtie2 
-  - samtools
-  - [java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
+  - __Python__
+  - __bowtie2__ 
+  - __samtools__
+  - __[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)__
+  - If you want to use SNPGT-build, you will also need to install __seqtk__
 
 ### Installing
 ```
@@ -47,12 +48,13 @@ sudo apt install bowtie2
 # install samtools
 sudo apt install samtools
 
+# install seqtk
+sudo apt-get install seqtk
 ```
 
 ## 🌟 Usage
 There are three subfolders and four files after the package is unziped.
 
-- **00.Make_RefGenome**
 - **01.Reference_Genome**
 - **02.Input_Fastq**
 - `GenomeAnalysisTK.jar`
