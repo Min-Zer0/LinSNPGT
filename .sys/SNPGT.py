@@ -165,7 +165,7 @@ for line in Info_lines:
 		sample_info = [item.replace(' ', '') for item in line.split('|')]
 		samples_list.append(sample_info[1:-1])
 
-spec_ref = Spec_Ref.split('/')[-1][:-7]
+spec_ref = Spec_Ref[:-7]
 species = spec_ref.split('_')[0]
 reference = spec_ref.split('_')[1] + '_' + spec_ref.split('_')[2]
 
