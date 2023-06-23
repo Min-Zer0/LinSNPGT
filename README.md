@@ -53,21 +53,23 @@ sudo apt-get install seqtk
 ```
 
 ## 🌟 Usage
-There are three subfolders and four files after the package is unziped.
+There are three subfolders and tree files after the package is unziped.
 
+- **.sys**
 - **01.Reference_Genome**
 - **02.Input_Fastq**
-- `GenomeAnalysisTK.jar`
-- `Install.Java8.sh`
+- `makeRef.py`
+- `SNPGT.config`
 - `SNPGT.py`
-- `config.txt`
 
-To run LinSNPGT via `SNPGT.py`, you need to fill in the `config.txt` and put files in the corresponding path.
+To run LinSNPGT via `SNPGT.py`, you need to fill in the `SNPGT.config` and put files in the corresponding path.
 
 Here are the steps:
 
 1. Fill in the `config.txt` file
-	- Project_Name: Enter your project name which will be output file prefix.
+	- Generally, the Software Path does not need to be changed.
+
+ 	- Project_Name: Enter your project name which will be output file prefix.	 
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
 		- It must follow the format './01.Reference_Genome/`*.tar.gz`'
 		- Available species and datasets are listed below the `config.txt` file, including their download links.
@@ -76,9 +78,6 @@ Here are the steps:
 	- Samples_list: Fill in your raw sequencing data and their corresponding sample names.
 		- It must follow the format '|SAMPLE NAME|RAW READS NAME|RAW READS NAME'
 		- It should be vertical-bar-separated, with each sample represented on a separate row and each reads file represented in a separate column.
-2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
-3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
-4. run the command: `python SNPGT.py`
 ### Example
 ```
 #=================== Software Path =======================#
@@ -103,6 +102,11 @@ Thread_Count=10
 | Line2 | TEST2_r1.fastq | TEST2_r2.fastq |
 #===========================================================#
 ```
+
+2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
+3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
+4. run the command: `python SNPGT.py`
+
 
 
 The output format is like:
