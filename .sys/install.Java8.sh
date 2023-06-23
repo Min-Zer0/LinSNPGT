@@ -10,3 +10,4 @@ echo "=========================================="
 ./jdk/bin/java -version
 echo "=========================================="
 echo "Java8 has been installed !"
+mv ./install.Java8.sh .sys
