@@ -37,14 +37,15 @@ The species of the example-data files is *Oryza sativa*, you can select the rice
 git clone git@github.com:JessieChen7/LinSNPGT.git --recursive
 cd LinSNPGT
 
+# install java8
+./Install.Java8.sh
+
 # install bowtie2
 sudo apt install bowtie2
 
 # install samtools
 sudo apt install samtools
 
-# install java8
-./Install.Java8.sh
 ```
 
 ## 🌟 Usage
