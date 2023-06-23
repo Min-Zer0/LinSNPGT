@@ -40,7 +40,7 @@ cd LinSNPGT
 chmod +x ./install.sh && ./install.sh
 
 # install java8
-./Install.Java8.sh
+./install.Java8.sh
 
 # install bowtie2
 sudo apt install bowtie2
