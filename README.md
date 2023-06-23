@@ -34,7 +34,7 @@ The species of the example-data files is *Oryza sativa*, you can select the rice
 
 ### Installing
 ```
-git clone git@github.com:JessieChen7/LinSNPGT.git --recursive
+git clone https://github.com/JessieChen7/LinSNPGT.git
 cd LinSNPGT
 chmod +x ./install.sh && ./install
 
