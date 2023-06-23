@@ -240,6 +240,9 @@ else:
 	intervals = species + '_' + reference + '/' + reference + '.intervals'
 
 	for i in samples_list:
+		for x in range(2):
+			if i[x+1].endswith('.gz'):
+				i[x+1] = i[x+1][:-3]
 		print("\n")
 		print_table([i])
 		Alignment(Bowtie2_Path,Samtools_Path,alignment_reference_dir, species, i[0], i[1], i[2], thread)
