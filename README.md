@@ -72,7 +72,8 @@ Here are the steps:
  	- Project_Name: Enter your project name which will be output file prefix.	 
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
 		- Available species and datasets are listed below, including their download links.
-		>>> Maize
+
+   		> Maize
 		> 1458_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz]
 		> 1404_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz]
 		> 350_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
@@ -80,26 +81,27 @@ Here are the steps:
 		> 8652_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz]
 		> 5820_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz]
 
-		>> Rice
+		> Rice
 		> 705_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz]
 		> 378_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz]
 		> 1495_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz]
 
-		>> Cotton
+		> Cotton
 		> 1245_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz]
 
-		>> Millet
+		> Millet
 		> 827_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz]
 					
-		>> Chickpea
+		> Chickpea
 		> 2921_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz]
 		
-		>> Rapeseed
+		> Rapeseed
 		> 991_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz]
 		
-		>> Soybean
+		> Soybean
 		> 2795_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz]
-		- The species of the RefDataSet should match your raw sequencing data.
+
+   		- The species of the RefDataSet should match your raw sequencing data.
 	- Thread_Count: Enter the number of threads available to run the program
 	- Samples_list: Fill in your raw sequencing data and their corresponding sample names.
 		- It must follow the format '|SAMPLE NAME|RAW READS NAME|RAW READS NAME'
