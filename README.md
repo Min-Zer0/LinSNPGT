@@ -77,34 +77,36 @@ Here are the steps:
 		---|
 	  	[1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)|
 		[1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)|
-   		
-	
-   		
+		[350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz)|
+		[1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz)|
+		[8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz)|
+		[5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz)|
+   
+		Rice|
+		---|
+		[705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz)|
+		[378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz)|
+		[1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz)|
 
-   		350_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
-		1604_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz]
-		8652_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz]
-		5820_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz]
+		Cotton|
+		---|
+		[1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz)|
 
-		Rice
-		705_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz]
-		378_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz]
-		1495_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz]
-
-		Cotton
-		1245_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz]
-
-		Millet
-		827_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz]
+		Millet|
+		---|
+		[827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz)|
 					
-		Chickpea
-		2921_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz]
+		Chickpea|
+		---|
+		[2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz)|
 		
-		Rapeseed
-		991_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz]
+		Rapeseed|
+		---|
+   		[991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz)|
 		
-		Soybean
-		2795_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz]
+		Soybean|
+		---|
+		[2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz)|
 
    		- The species of the RefDataSet should match your raw sequencing data.
 	- Thread_Count: Enter the number of threads available to run the program
