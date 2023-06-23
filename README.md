@@ -77,7 +77,6 @@ Here are the steps:
 		---|
 	  	[1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)|
 		[1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)|
-		...|
    		
 	
    		
