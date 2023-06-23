@@ -76,6 +76,31 @@ Here are the steps:
 2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
+### Example
+```
+#=================== Software Path =======================#
+Java_Path=./jdk/bin/java
+Bowtie2_Path=bowtie2
+Samtools_Path=samtools
+#=========================================================#
+
+#=================== LinSNPGT Config =======================#
+* [Project]
+Project_Name=Rice.TEST
+
+* [Species and Dataset]
+RefDataSetFile=./Reference_Genome/Rice_378_Inbred.tar.gz
+
+* [Running LinSNPGT Thread]
+Thread_Count=10
+
+* [Samples_list]
+> |sample|Read1|Read2|
+| Line1 | TEST1_r1.fastq | TEST1_r2.fastq |
+| Line2 | TEST2_r1.fastq | TEST2_r2.fastq |
+#===========================================================#
+```
+
 
 The output format is like:
 
