@@ -122,7 +122,7 @@ Chr12|364755|.
 
 ## 🌟 Make Ref
 
-**python makeRef.py -h**
+`python makeRef.py -h`
 
 ```
 usage: makeRef.py [-h] [-F FASTA] [-B BIM] [-S SPECIES] [-N STRAIN] [-L BINLEN] [--JavaPath JAVAPATH] [--SamtoolsPath SAMTOOLSPATH] [--SeqtkPath SEQTKPATH]
@@ -150,7 +150,8 @@ optional arguments:
                         Path to bowtie2-build.
 ```
 
-**python makeRef.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre**
+### Example
+`python makeRef.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
 
 ## 💡 Frequently Asked Questions
 If there are some errors reported during the running of the program, please refer to the following scenarios to solve the problem:
