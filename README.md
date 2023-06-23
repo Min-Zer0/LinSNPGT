@@ -107,7 +107,31 @@ Thread_Count=10
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
 
+```
+usage: makeRef.py [-h] [-F FASTA] [-B BIM] [-S SPECIES] [-N STRAIN] [-L BINLEN] [--JavaPath JAVAPATH] [--SamtoolsPath SAMTOOLSPATH] [--SeqtkPath SEQTKPATH]
+                  [--Bowtie2Path BOWTIE2PATH]
 
+SNPGT-build (Tools for make RefGenome)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -F FASTA, --fasta FASTA
+                        Whole genome reference sequence
+  -B BIM, --bim BIM     SNP site information(bim file)
+  -S SPECIES, --species SPECIES
+                        Specify species name; eg. Rice
+  -N STRAIN, --strain STRAIN
+                        Specify strain name; eg. 378_Inbred
+  -L BINLEN, --binlen BINLEN
+                        The simplified of the genome retains base length on both sides of the SNP. The default value is 400
+  --JavaPath JAVAPATH   Path to java8. The default is ./jdk/bin/java
+  --SamtoolsPath SAMTOOLSPATH
+                        Path to samtools.
+  --SeqtkPath SEQTKPATH
+                        Path to Seqtk.
+  --Bowtie2Path BOWTIE2PATH
+                        Path to bowtie2-build.
+```
 
 The output format is like:
 
