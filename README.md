@@ -31,7 +31,7 @@ The species of the example-data files is *Oryza sativa*, you can select the rice
   - __bowtie2__ 
   - __samtools__
   - __[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)__
-  - If you want to use SNPGT-build, you will also need to install __seqtk__
+  - If you want to use __SNPGT-build__, you will also need to install __seqtk__
 
 ### Installing
 ```
@@ -52,7 +52,7 @@ sudo apt install samtools
 sudo apt-get install seqtk
 ```
 
-## 🌟 Usage
+## 🌟 SNPGT
 There are three subfolders and tree files after the package is unziped.
 
 - **.sys**
@@ -107,6 +107,23 @@ Thread_Count=10
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
 
+The output file is in the 0000.00.00.result directory
+The output format is like:
+
+\#CHROM|POS|Line1
+---|---|---
+Chr1|128960|A
+Chr1|133137|C
+...|...|...
+Chr12|321216|A
+Chr12|364257|A
+Chr12|364755|.
+...|...|...
+
+## 🌟 Make Ref
+
+**python makeRef.py -h**
+
 ```
 usage: makeRef.py [-h] [-F FASTA] [-B BIM] [-S SPECIES] [-N STRAIN] [-L BINLEN] [--JavaPath JAVAPATH] [--SamtoolsPath SAMTOOLSPATH] [--SeqtkPath SEQTKPATH]
                   [--Bowtie2Path BOWTIE2PATH]
@@ -133,17 +150,7 @@ optional arguments:
                         Path to bowtie2-build.
 ```
 
-The output format is like:
-
-\#CHROM|POS|Line1
----|---|---
-Chr1|128960|A
-Chr1|133137|C
-...|...|...
-Chr12|321216|A
-Chr12|364257|A
-Chr12|364755|.
-...|...|...
+**python makeRef.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre**
 
 ## 💡 Frequently Asked Questions
 If there are some errors reported during the running of the program, please refer to the following scenarios to solve the problem:
