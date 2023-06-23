@@ -73,9 +73,14 @@ Here are the steps:
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
 		- Available species and datasets are listed below, including their download links.
 
-   		Maize
-   		[1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)	
-   		[1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)
+		Maize|
+		---|
+	  	[1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)|
+		[1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)|
+		...|
+   		
+	
+   		
 
    		350_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
 		1604_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz]
