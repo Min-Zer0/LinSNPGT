@@ -71,8 +71,34 @@ Here are the steps:
 
  	- Project_Name: Enter your project name which will be output file prefix.	 
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
-		- It must follow the format './01.Reference_Genome/`*.tar.gz`'
-		- Available species and datasets are listed below the `config.txt` file, including their download links.
+		- Available species and datasets are listed below, including their download links.
+		>>> Maize
+		> 1458_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz]
+		> 1404_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz]
+		> 350_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
+		> 1604_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz]
+		> 8652_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz]
+		> 5820_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz]
+
+		>> Rice
+		> 705_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz]
+		> 378_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz]
+		> 1495_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz]
+
+		>> Cotton
+		> 1245_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz]
+
+		>> Millet
+		> 827_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz]
+					
+		>> Chickpea
+		> 2921_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz]
+		
+		>> Rapeseed
+		> 991_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz]
+		
+		>> Soybean
+		> 2795_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz]
 		- The species of the RefDataSet should match your raw sequencing data.
 	- Thread_Count: Enter the number of threads available to run the program
 	- Samples_list: Fill in your raw sequencing data and their corresponding sample names.
@@ -84,23 +110,24 @@ Here are the steps:
 Java_Path=./jdk/bin/java
 Bowtie2_Path=bowtie2
 Samtools_Path=samtools
-#=========================================================#
 
 #=================== LinSNPGT Config =======================#
 * [Project]
 Project_Name=Rice.TEST
 
 * [Species and Dataset]
-RefDataSetFile=./Reference_Genome/Rice_378_Inbred.tar.gz
+RefDataSet_File=Rice_378_Inbred.tar.gz
 
 * [Running LinSNPGT Thread]
 Thread_Count=10
 
 * [Samples_list]
-> |sample|Read1|Read2|
-| Line1 | TEST1_r1.fastq | TEST1_r2.fastq |
-| Line2 | TEST2_r1.fastq | TEST2_r2.fastq |
-#===========================================================#
+> ===========================================
+> |sample | Read1          | Read2          |
+> -------------------------------------------
+  | Line1 | TEST1_r1.fastq | TEST1_r2.fastq |
+  | Line2 | TEST2_r1.fastq | TEST2_r2.fastq |
+
 ```
 
 2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
