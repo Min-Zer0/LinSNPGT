@@ -46,7 +46,7 @@ def print_table(data):
 def Alignment(Bowtie2_Path,Samtools_Path,Reference_dir,Species,Sample,Read1,Read2,Thread):
 	os.system('%s -p %s \
 		-x ./01.Reference_Genome/%s/SNP_intervals \
-		-U ./02.Input_Fastq/%s ./02.Input_Fastq/%s \
+		-U ./02.Input_Fastq/%s,./02.Input_Fastq/%s \
 		-S ./temp.sam'%(Bowtie2_Path,Thread,Reference_dir,Read1,Read2))
 	os.system('%s view -h \
 		-F 4 ./temp.sam > ./mapped.sam && rm -rf ./temp.sam'%(Samtools_Path))
@@ -251,3 +251,4 @@ else:
 	Calling_SNP(Java_Path,gatk_reference, reference, project, intervals, thread)
 	VCF2Genotyping(project, len(samples_list))
 	print("done!")
+locals
