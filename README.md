@@ -58,7 +58,7 @@ There are three subfolders and tree files after the package is unziped.
 - **.sys**
 - **01.Reference_Genome**
 - **02.Input_Fastq**
-- `makeRef.py`
+- `SNPGT-build.py`
 - `SNPGT.config`
 - `SNPGT.py`
 
@@ -157,10 +157,10 @@ Chr12|364755|.
 
 ## 🌟 Make Ref
 
-`python makeRef.py -h`
+`python SNPGT-build.py -h`
 
 ```
-usage: makeRef.py [-h] [-F FASTA] [-B BIM] [-S SPECIES] [-N STRAIN] [-L BINLEN] [--JavaPath JAVAPATH] [--SamtoolsPath SAMTOOLSPATH] [--SeqtkPath SEQTKPATH]
+usage: SNPGT-build.py [-h] [-F FASTA] [-B BIM] [-S SPECIES] [-N STRAIN] [-L BINLEN] [--JavaPath JAVAPATH] [--SamtoolsPath SAMTOOLSPATH] [--SeqtkPath SEQTKPATH]
                   [--Bowtie2Path BOWTIE2PATH]
 
 SNPGT-build (Tools for make RefGenome)
@@ -186,7 +186,7 @@ optional arguments:
 ```
 
 ### Example
-`python makeRef.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
+`python SNPGT-build.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
 
 ## 💡 Frequently Asked Questions
 If there are some errors reported during the running of the program, please refer to the following scenarios to solve the problem:
