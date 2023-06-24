@@ -25,13 +25,38 @@ The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061) and extract data with command `tar zxvf example-data.tar.gz`.
 
 The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset in the toolkit to complete the genotyping.
+
+In the process of using LinSNPGT, you need to download RefDataSetFile, the following list is the download link. There will be more detailed instructions in the SNPGT Usage below.
+
+- Maize (*Zea mays*):
+	- [1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)
+	- [1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)
+	- [350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz)
+	- [1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz)
+	- [8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz)
+	- [5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz)
+- Rice (*Oryza sativa*):
+	- [705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz)
+	- [378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz)
+	- [1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz)
+- Cotton (*Gossypium hirsutum*):
+	- [1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz)
+- Millet (*Setaria italica*):
+	- [827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz)
+- Chickpea (*Cicer arietinum*):
+	- [2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz)
+- Rapeseed (*Brassica napus*):
+	- [991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz)
+- Soybean (*Glycine max*):
+	- [2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz)
+
 ## 🌟 Installation
 ### LinSNPGT requires :
-  - __Python__
-  - __bowtie2__ 
-  - __samtools__
-  - __[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)__
-  - If you want to use __SNPGT-build__, you will also need to install __seqtk__
+  - **Python**
+  - **bowtie2**
+  - **samtools**
+  - **[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)**
+  - If you want to use **SNPGT-build**, you will also need to install **seqtk**
 
 ### Installing
 ```
@@ -48,12 +73,12 @@ sudo apt install bowtie2
 # install samtools
 sudo apt install samtools
 
-# install seqtk
+# install seqtk if you want to use SNPGT-build
 sudo apt-get install seqtk
 ```
 
 ## 🌟 SNPGT
-There are three subfolders and tree files after the package is unziped.
+There are three subfolders and tree files after LinSNPGT being installed.
 
 - **.sys**
 - **01.Reference_Genome**
@@ -68,10 +93,9 @@ Here are the steps:
 
 1. Fill in the `config.txt` file
 	- Generally, the Software Path does not need to be changed.
-
  	- Project_Name: Enter your project name which will be output file prefix.	 
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
-		- Available species and datasets are listed below, including their download links.
+		- Available species and datasets has been listed above, including their download links.
    		- The species of the RefDataSet should match your raw sequencing data.
 	- Thread_Count: Enter the number of threads available to run the program
 	- Samples_list: Fill in your raw sequencing data and their corresponding sample names.
@@ -89,7 +113,7 @@ Here are the steps:
 	Project_Name=Rice.TEST
 	
 	* [Species and Dataset]
-	RefDataSet_File=Rice_378_Inbred
+	RefDataSet_File=Rice_705_Inbred
 	
 	* [Running LinSNPGT Thread]
 	Thread_Count=10
@@ -103,46 +127,10 @@ Here are the steps:
 	
 	```
 	
-	Maize|
-	---|
-	[1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)|
-	[1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)|
-	[350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz)|
-	[1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz)|
-	[8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz)|
-	[5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz)|
-	   
-	Rice|
-	---|
-	[705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz)|
-	[378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz)|
-	[1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz)|
-	
-	Cotton|
-	---|
-	[1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz)|
-	
-	Millet|
-	---|
-	[827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz)|
-						
-	Chickpea|
-	---|
-	[2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz)|
-			
-	Rapeseed|
-	---|
-	[991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz)|
-			
-	Soybean|
-	---|
-	[2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz)|
-
 2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
 
-The output file is in the 0000.00.00.result directory
 The output format is like:
 
 \#CHROM|POS|Line1
@@ -156,6 +144,7 @@ Chr12|364755|.
 ...|...|...
 
 ## 🌟 SNPGT-build
+If you are not limited to the dataset of 14 populations provided by our program, you can try to use **SNPGT-build** to make your own RefDataSetFile, and then use SNPGT to complete genotyping.
 
 `python SNPGT-build.py -h`
 
