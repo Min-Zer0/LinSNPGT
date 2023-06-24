@@ -53,7 +53,7 @@ In the process of using LinSNPGT, you need to download RefDataSetFile, the follo
 ## 🌟 Installation
 ### LinSNPGT requires :
   - **Python3**
-  - **bowtie2**
+  - **bowtie2 >= Version 2.4.2**
   - **samtools**
   - **[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)**
   - If you want to use **SNPGT-build**, you will also need to install **seqtk**
