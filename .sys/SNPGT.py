@@ -175,21 +175,21 @@ print("Checking software configuration")
 
 print(">>> java")
 if check_java(Java_Path):
-    print("Done ！\n")
+    print("Done !\n")
 else:
     print("Java8 is not installed.\n")
     os._exit()
     
 print(">>> bowtie2")
 if check_bowtie2(Bowtie2_Path):
-    print("Done ！\n")
+    print("Done !\n")
 else:
     print("bowtie2 is not installed.\n")
     os._exit()
 
 print(">>> samtools")
 if check_samotools(Samtools_Path):
-    print("Done ！\n")
+    print("Done !\n")
 else:
     print("samtools is not installed.\n")
     os._exit()
