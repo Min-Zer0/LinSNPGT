@@ -6,13 +6,14 @@ import subprocess
 
 def check_java(Java_Path):
     try:
-        output = subprocess.check_output([Java_Path, "-version"], stderr=subprocess.STDOUT)
-        output = output.decode("utf-8").lower()
-        if 'java version "1.8' in output:
+        result = subprocess.run([Java_Path, '-version'], capture_output=True, text=True)
+        output = result.stderr
+        java_version = output.splitlines()[0].split()[2].replace('"', '')
+        if java_version.startswith('1.8'):
             return True
         else:
             return False
-    except subprocess.CalledProcessError:
+    except FileNotFoundError:
         return False
     
 def check_bowtie2(Bowtie2_Path):
