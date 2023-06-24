@@ -155,7 +155,7 @@ Chr12|364257|A
 Chr12|364755|.
 ...|...|...
 
-## 🌟 Make Ref
+## 🌟 SNPGT-build
 
 `python SNPGT-build.py -h`
 
