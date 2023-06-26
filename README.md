@@ -53,7 +53,7 @@ In the process of using LinSNPGT, you need to download RefDataSetFile, the follo
 ## 🌟 Installation
 ### LinSNPGT requires :
   - **Python3**
-  - **bowtie2 >= Version 2.4.2**
+  - **bowtie2**
   - **samtools**
   - **[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)**
   - If you want to use **SNPGT-build**, you will also need to install **seqtk**
@@ -176,10 +176,6 @@ optional arguments:
 
 ### Example
 `python SNPGT-build.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
-
-## 💡 Frequently Asked Questions
-If there are some errors reported during the running of the program, please refer to the following scenarios to solve the problem:
-
 
 
 The above are some possible causes of errors, if there are any other problems, welcome to contact us.
