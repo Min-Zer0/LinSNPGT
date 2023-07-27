@@ -222,7 +222,7 @@ else:
 		print("Indexing of the dataset has been completed, go on!")
 	else:
 		print("Dataset index file corruption! Re-download and move the file.")
-		os.system('rm -rf .sys/Reference_Genome/%s > /dev/null 2>&1' % (species + '_' + reference))
+		os.system('rm -rf ./01.Reference_Genome/%s > /dev/null 2>&1' % (species + '_' + reference))
 		os._exit()
 
 gz_files = os.listdir(r'./02.Input_Fastq/')
