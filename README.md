@@ -14,7 +14,7 @@ We have developed a toolkit to call variant loci on the windows system, [**WinSN
 - Contacts
 
 ## 🧾 Background
-We have developed a phenotype prediction platform, **[CropGS-Hub](http://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
+We have developed a phenotype prediction platform, **[CropGS-Hub](https://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
 
 The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the linux system to realize the whole process from sequencing files to getting genotypes by simple operation.
 
