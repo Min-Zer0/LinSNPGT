@@ -1,7 +1,7 @@
-# ___LinSNPGT: Genotyping of specified SNP sites on linux system___
+# ___LinSNPGT: Genotyping of specified SNP sites on Linux system___
 
 ## 💡 General Introduction
-We have developed a toolkit to call variant loci on the windows system, [**WinSNPGT**](https://github.com/JessieChen7/WinSNPGT), which is very friendly to those who have little experience in linux operation. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets. LinSNPGT is the Linux platform version of this toolkit. The installation and use of this toolkit is described below.
+We have developed a toolkit to call variant loci on the windows system, [**WinSNPGT**](https://github.com/Min-Zer0/WinSNPGT), which is very friendly to those who have little experience in linux operation. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets. LinSNPGT is the Linux platform version of this toolkit. The installation and use of this toolkit is described below.
 
 ## 📘 Table of Contents
 
@@ -14,7 +14,7 @@ We have developed a toolkit to call variant loci on the windows system, [**WinSN
 - Contacts
 
 ## 🧾 Background
-We have developed a phenotype prediction platform, **[CropGS-Hub](https://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
+We have developed a phenotype prediction platform, **[CropGStools](http://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
 
 The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the linux system to realize the whole process from sequencing files to getting genotypes by simple operation.
 
@@ -24,31 +24,33 @@ The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 ## 🔍 Data
 The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061) and extract data with command `tar zxvf example-data.tar.gz`.
 
-The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset in the toolkit to complete the genotyping.
+The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset (e.g: GSTP007 ~ GSTP009) in the toolkit to complete the genotyping.
 
-In the process of using LinSNPGT, you need to download RefDataSetFile, the following list is the download link. There will be more detailed instructions in the SNPGT Usage below.
+In the process of using LinSNPGT, you need to download RefDataSetFile. Listed below is the download link and RefDataSet_File name that needs to be filled in the `config.txt` file.
 
 - Maize (*Zea mays*):
-	- [1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz)
-	- [1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz)
-	- [350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz)
-	- [1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz)
-	- [8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz)
-	- [5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz)
+	- [GSTP001_8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz) : Maize_8652_Hybrid
+	- [GSTP002_5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz) : Maize_5820_Hybrid
+	- [GSTP003_1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz) : Maize_1458_Inbred
+	- [GSTP004_1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz) : Maize_1404_Inbred
+	- [GSTP005_350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz) : Maize_350_Inbred
+	- [GSTP006_1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz) : Maize_1604_Inbred
 - Rice (*Oryza sativa*):
-	- [705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz)
-	- [378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz)
-	- [1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz)
+	- [GSTP007_1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz) : Rice_1495_Hybrid
+	- [GSTP008_705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz) : Rice_705_Inbred
+	- [GSTP009_378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz) : Rice_378_Inbred
 - Cotton (*Gossypium hirsutum*):
-	- [1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz)
+	- [GSTP010_1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz) : Cotton_1245_Inbred
 - Millet (*Setaria italica*):
-	- [827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz)
+	- [GSTP011_827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz) : Millet_827_Inbred
 - Chickpea (*Cicer arietinum*):
-	- [2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz)
+	- [GTP012_2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz) : Chickpea_2921_Inbred
 - Rapeseed (*Brassica napus*):
-	- [991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz)
+	- [GSTP013_991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz) : Rapeseed_991_Inbred
 - Soybean (*Glycine max*):
-	- [2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz)
+	- [GSTP014_2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz) : Soybean_2795_Inbred
+
+There will be more detailed instructions in the SNPGT Usage below.
 
 ## 🌟 Installation
 ### LinSNPGT requires :
@@ -73,12 +75,12 @@ sudo apt install bowtie2
 # install samtools
 sudo apt install samtools
 
-# install seqtk if you want to use SNPGT-build
+# install seqtk if you want to use **SNPGT-build**
 sudo apt-get install seqtk
 ```
 
 ## 🌟 SNPGT
-There are three subfolders and tree files after LinSNPGT being installed.
+There are three subfolders and three files after LinSNPGT being installed.
 
 - **.sys**
 - **01.Reference_Genome**
@@ -92,7 +94,7 @@ To run LinSNPGT via `SNPGT.py`, you need to fill in the `SNPGT.config` and put f
 Here are the steps:
 
 1. Fill in the `config.txt` file
-	- Generally, the Software Path does not need to be changed.
+	- Software Path: Generally, this content does not need to be changed.
  	- Project_Name: Enter your project name which will be output file prefix.	 
 	- RefDataSetFile: Enter your dataset corresponding to the model to be fitted.
 		- Available species and datasets has been listed above, including their download links.
@@ -127,6 +129,7 @@ Here are the steps:
 	
 	```
 	
+
 2. Download the RefDataSetFile file  `(*.tar.gz)` and move it to the path: **./01.Reference_Genome** 
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
@@ -177,12 +180,9 @@ optional arguments:
 ### Example
 `python SNPGT-build.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
 
-
-The above are some possible causes of errors, if there are any other problems, welcome to contact us.
-
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
 Min Zhu (1185643615@qq.com)  
-Jiaxin (jxchen1217@gmail.com)
+Jiaxin Chen (jxchen1217@gmail.com)
 
 
