@@ -178,7 +178,7 @@ optional arguments:
 
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
-Min Zhu (1185643615@qq.com)  
+Min Zhu (zer0min@outlook.com)  
 Jiaxin Chen (jxchen1217@gmail.com)
 
 
