@@ -49,7 +49,8 @@ There will be more detailed instructions in the SNPGT Usage below.
 
 ### Installing
 ```
-git clone https://github.com/JessieChen7/LinSNPGT.git
+git clone https://github.com/Min-Zer0/LinSNPGT.git
+
 cd LinSNPGT
 chmod +x ./install.sh && ./install.sh
 
@@ -99,7 +100,7 @@ Here are the steps:
 	
 	#=================== LinSNPGT Config =======================#
 	* [Project]
-	Project_Name=Rice.TEST
+	Project_Name=Rice
 	
 	* [Species and Dataset]
 	RefDataSet_File=Rice_705_Inbred
@@ -111,8 +112,8 @@ Here are the steps:
 	> ===========================================
 	> |sample | Read1          | Read2          |
 	> -------------------------------------------
-	  | Line1 | TEST1_r1.fastq | TEST1_r2.fastq |
-	  | Line2 | TEST2_r1.fastq | TEST2_r2.fastq |
+	  | Line1 | test1_1.fastq.gz | test1_2.fastq.gz |
+	  | Line2 | test2_1.fastq.gz | test2_2.fastq.gz |
 	
 	```
 	
@@ -121,17 +122,25 @@ Here are the steps:
 3. Move your raw sequencing data `(*.fastq.gz)` or `(*.fastq)` to the path: **./02.Input_Fastq**
 4. run the command: `python SNPGT.py`
 
-The output format is like:
+### Output & Analysis
+- After the program is completed, the result file will be output in the Result/ directory.
+	- ***Standard format VCF (variant call format) file***
+	- ****.Genotype.txt***  （Sample genotyping matrix, the format is as follows) 
 
-\#CHROM|POS|Line1
----|---|---
-Chr1|128960|A
-Chr1|133137|C
-...|...|...
-Chr12|321216|A
-Chr12|364257|A
-Chr12|364755|.
-...|...|...
+	CHROM|POS|Line 1|line 2|...|line N|
+	---|---|---|---|---|---|
+	Chr1|128960|A|.|...|C|
+	Chr1|133137|C|C|...|T|
+	...|...|...|...|...|...|...|
+	Chr12|321216|A|A|...|A|
+	Chr12|364257|A|C|...|C|
+	Chr12|364755|.|.|...|.|
+	...|...|...|...|...|...|...|
+
+- Upload ****.Genotype.txt*** to CropGS-Hub to complete subsequent analysis
+	- Phenotype Prediction  **[PhenotypePrediction](https://iagr.genomics.cn/CropGS/#/PhenotypePrediction)** 	
+	- Crossing Design  **[CrossingDesign](https://iagr.genomics.cn/CropGS/#/CrossingDesign)**
+
 
 ## 🌟 SNPGT-build
 If you are not limited to the dataset of 14 populations provided by our program, you can try to use **SNPGT-build** to make your own RefDataSetFile, and then use SNPGT to complete genotyping.
@@ -165,7 +174,7 @@ optional arguments:
 ```
 
 ### Example
-`python SNPGT-build.py -F path_to/Rice.fa -B path_to/R378_Inbred.bim -S Rice -N 378_Inbre`
+`python SNPGT-build.py -F path_to/Rice.fa -B path_to/Rice_378_Inbred.bim -S Rice -N 378_Inbre`
 
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
