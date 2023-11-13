@@ -103,14 +103,18 @@ def Calling_SNP(Java_Path,Reference,ref,Project,Intervals,Thread):
 		./%s.realn.bam ./%s.realn.bai ./%s.realn.intervals \
 		./%s.raw.vcf.idx'%(Project,Project,Project,Project,Project,Project))
 
-def VCF2Genotyping(Project,SamplesNum):
+def VCF2Genotyping(Project,SamplesNum,Reference):
 	sample_col=''
 	for i in range(SamplesNum):
 		sample_col = sample_col+',$'+str(10+i)
 		col_num = "$1,$2,$4,$5"+sample_col
 	os.system("grep -v '##' %s.raw.vcf | awk '{print %s}' > %s.vcf2Genotyping.txt"%(Project,col_num,Project))
 	VCF_df = open(Project+'.vcf2Genotyping.txt', 'r')
+	formatted_datetime = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 	with open(Project+'.Genotype.txt', 'w') as fw:
+		fw.write('##Date=%s\n'%formatted_datetime)
+		fw.write('##Reference=%s\n'%Reference)
+		fw.write('##Project=%s\n'%Project)
 		for line in VCF_df:
 			if line[0] == "#":
 				outputline=line[:-1].split(' ')[0:2] + line[:-1].split(' ')[4:SamplesNum+4]
@@ -249,6 +253,6 @@ else:
 		Alignment(Bowtie2_Path,Samtools_Path,alignment_reference_dir, species, i[0], i[1], i[2], thread)
 	Merge_rmPCRdup(Samtools_Path,project, thread)
 	Calling_SNP(Java_Path,gatk_reference, reference, project, intervals, thread)
-	VCF2Genotyping(project, len(samples_list))
+	VCF2Genotyping(project, len(samples_list),reference)
 	print("done!")
 locals
