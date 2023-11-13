@@ -3,16 +3,6 @@
 ## 💡 General Introduction
 We have developed a toolkit to call variant loci on the windows system, [**WinSNPGT**](https://github.com/Min-Zer0/WinSNPGT), which is very friendly to those who have little experience in linux operation. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets. LinSNPGT is the Linux platform version of this toolkit. The installation and use of this toolkit is described below.
 
-## 📘 Table of Contents
-
-- Background
-- Change Log
-- Data
-- Installation
-- Usage
-- Frequently Asked Questions
-- Contacts
-
 ## 🧾 Background
 We have developed a phenotype prediction platform, **[CropGStools](http://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
 
