@@ -16,26 +16,26 @@ The species of the example-data files is *Oryza sativa*, you can select the rice
 In the process of using LinSNPGT, you need to download RefDataSetFile. Listed below is the download link and RefDataSet_File name that needs to be filled in the `config.txt` file.
 
 - Maize (*Zea mays*):
-	- [GSTP001_8652_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz) : Maize_8652_Hybrid
-	- [GSTP002_5820_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz) : Maize_5820_Hybrid
-	- [GSTP003_1458_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz) : Maize_1458_Inbred
-	- [GSTP004_1404_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz) : Maize_1404_Inbred
-	- [GSTP005_350_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz) : Maize_350_Inbred
-	- [GSTP006_1604_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz) : Maize_1604_Inbred
+	- [GSTP001_8652_Hybrid](https://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz) : Maize_8652_Hybrid
+	- [GSTP002_5820_Hybrid](https://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz) : Maize_5820_Hybrid
+	- [GSTP003_1458_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz) : Maize_1458_Inbred
+	- [GSTP004_1404_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz) : Maize_1404_Inbred
+	- [GSTP005_350_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz) : Maize_350_Inbred
+	- [GSTP006_1604_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz) : Maize_1604_Inbred
 - Rice (*Oryza sativa*):
-	- [GSTP007_1495_Hybrid](http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz) : Rice_1495_Hybrid
-	- [GSTP008_705_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz) : Rice_705_Inbred
-	- [GSTP009_378_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz) : Rice_378_Inbred
+	- [GSTP007_1495_Hybrid](https://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz) : Rice_1495_Hybrid
+	- [GSTP008_705_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz) : Rice_705_Inbred
+	- [GSTP009_378_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz) : Rice_378_Inbred
 - Cotton (*Gossypium hirsutum*):
-	- [GSTP010_1245_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz) : Cotton_1245_Inbred
+	- [GSTP010_1245_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz) : Cotton_1245_Inbred
 - Millet (*Setaria italica*):
-	- [GSTP011_827_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz) : Millet_827_Inbred
+	- [GSTP011_827_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz) : Millet_827_Inbred
 - Chickpea (*Cicer arietinum*):
-	- [GTP012_2921_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz) : Chickpea_2921_Inbred
+	- [GTP012_2921_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz) : Chickpea_2921_Inbred
 - Rapeseed (*Brassica napus*):
-	- [GSTP013_991_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz) : Rapeseed_991_Inbred
+	- [GSTP013_991_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz) : Rapeseed_991_Inbred
 - Soybean (*Glycine max*):
-	- [GSTP014_2795_Inbred](http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz) : Soybean_2795_Inbred
+	- [GSTP014_2795_Inbred](https://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz) : Soybean_2795_Inbred
 
 There will be more detailed instructions in the SNPGT Usage below.
 
