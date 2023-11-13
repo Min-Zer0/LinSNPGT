@@ -9,7 +9,8 @@ We have developed a phenotype prediction platform, **[CropGStools](https://iagr.
 The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the linux system to realize the whole process from sequencing files to getting genotypes by simple operation.
 
 ## 🔍 Data
-The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061) and extract data with command `tar zxvf example-data.tar.gz`.
+The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061) and extract data with command 
+`tar -zxvf example-data.tar.gz`.
 
 The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset (e.g: GSTP007 ~ GSTP009) in the toolkit to complete the genotyping.
 
