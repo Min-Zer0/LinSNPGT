@@ -255,4 +255,3 @@ else:
 	Calling_SNP(Java_Path,gatk_reference, reference, project, intervals, thread)
 	VCF2Genotyping(project, len(samples_list),reference)
 	print("done!")
-locals
