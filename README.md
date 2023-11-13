@@ -10,7 +10,9 @@ The LinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 
 ## 🔍 Data
 The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061) and extract data with command 
-`tar -zxvf example-data.tar.gz`.
+```bash
+tar -zxvf example-data.tar.gz
+```
 
 The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset (e.g: GSTP007 ~ GSTP009) in the toolkit to complete the genotyping.
 
@@ -49,7 +51,7 @@ There will be more detailed instructions in the SNPGT Usage below.
   - If you want to use **SNPGT-build**, you will also need to install **seqtk**
 
 ### Installing
-```
+```bash
 git clone https://github.com/Min-Zer0/LinSNPGT.git
 
 cd LinSNPGT
