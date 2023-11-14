@@ -47,7 +47,7 @@ There will be more detailed instructions in the SNPGT Usage below.
   - **Python3**
   - **bowtie2**
   - **samtools**
-  - **[java8](https://iagr.genomics.cn/static/gstool/media/snpgt/jdk-8u351-windows-x64.exe)**
+  - **[java8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)**
   - If you want to use **SNPGT-build**, you will also need to install **seqtk**
 
 ### Installing
