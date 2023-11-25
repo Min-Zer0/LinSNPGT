@@ -183,7 +183,7 @@ optional arguments:
 You can use this script to quickly convert VCF to GenoType files.
 Example
 - Put the VCF files to be converted in the same directory as GenoType.py
-`python GenoType.py`
+- `python GenoType.py`
 
 
 ## 👥 Contacts
