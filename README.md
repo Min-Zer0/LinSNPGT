@@ -179,6 +179,13 @@ optional arguments:
 ### Example
 `python SNPGT-build.py -F path_to/Rice.fa -B path_to/Rice_378_Inbred.bim -S Rice -N 378_Inbre`
 
+## 🌟 GenoType
+You can use this script to quickly convert VCF to GenoType files.
+Example
+- Put the VCF files to be converted in the same directory as GenoType.py
+`python GenoType.py`
+
+
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
 Min Zhu (zer0min@outlook.com)  
